@@ -1,0 +1,52 @@
+.notifications{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll; 
+}
+.notifications::-webkit-scrollbar{
+    display: none;
+}
+
+.notifications{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.header{
+    padding-bottom: 0;
+    padding-left: 0;
+    
+}
+.header h2{
+    margin-left: 20px;
+}
+.header > button{
+    color: var(--twitter-color);
+    border: none;
+    background-color: inherit;
+    width: 160px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+
+}
+.header > button:hover{
+    border-bottom: 1px solid var(--twitter-color);
+    background-color: #000018;
+}
+
+.notification{
+    border: solid 2px var(--twitter-background);
+    display: flex;
+    padding: 20px;
+    
+}
+.icon {
+    color: palevioletred;
+    margin-right: 10px;
+    height: 50px !important;
+}
+.notification h4{
+    margin-left: 15px;
+}

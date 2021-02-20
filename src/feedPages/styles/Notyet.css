@@ -1,0 +1,15 @@
+.notyet{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.notyet::-webkit-scrollbar{
+    display: none;
+}
+
+.notyet{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

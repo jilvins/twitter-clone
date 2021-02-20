@@ -1,0 +1,35 @@
+.news-card{
+    display: flex;
+    padding: 10px;
+    margin: 0 10px;
+    border: solid 1px var(--twitter-background);
+
+}
+
+.whole-info{
+    width: 380px;
+}
+.author-info{
+    display: flex;
+}
+.image {
+    width: 70px;
+    height: 70px;
+    margin: auto 15px;
+}
+.author {
+    font-size: 0.8em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.date{
+    color: grey;
+    font-size: 0.7em;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.text{
+    font-size: 1em;
+}

@@ -1,8 +1,9 @@
 body{
   --twitter-color: #50b7f5;
   --twitter-background: #3A3B3C;
+  --twitter-phone: black;
   color:cornsilk;
-  background-color: black;
+  background-color: var(--twitter-phone);
 }
 
 .app{
@@ -12,4 +13,8 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
+}
+
+a {
+  color: inherit;
 }

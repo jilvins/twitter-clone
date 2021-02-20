@@ -16,7 +16,7 @@
 .header{
     position: sticky;
     top: 0;
-    background-color: black;
+    background-color: var(--twitter-phone);
     z-index: 100;
     border: 1 px solid var(--twitter-background);
     padding: 15px 20px;

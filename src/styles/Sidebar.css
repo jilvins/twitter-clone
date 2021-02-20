@@ -21,7 +21,10 @@
     width: 90% !important;
 
 }
+.NavLink{
+    text-decoration: none;
+}
 
-.sidebar-options--active{
+.selected{
     color: var(--twitter-color);
 }

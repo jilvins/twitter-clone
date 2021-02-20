@@ -1,0 +1,18 @@
+.explore{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.explore::-webkit-scrollbar{
+    display: none;
+}
+
+.explore{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.explore > h2{
+    margin-left: 10px;
+}

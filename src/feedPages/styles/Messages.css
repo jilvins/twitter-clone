@@ -1,0 +1,29 @@
+.messages{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll; 
+}
+.messages::-webkit-scrollbar{
+    display: none;
+}
+
+.messages{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.message{
+    border: solid 2px var(--twitter-background);
+    display: flex;
+    padding: 20px;
+    
+}
+.icon {
+    color: palevioletred;
+    margin-right: 10px;
+    height: 50px !important;
+}
+.message h4{
+    margin-left: 15px;
+}
