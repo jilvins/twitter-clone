@@ -5,6 +5,11 @@ const Context = React.createContext()
 
 function ContextProvider ({children}) {
     const [data, setData] = useState()
+    const [theme, setTheme] = useState("dark")
+
+    const themeToggler = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark") 
+    console.log(theme)}
         
           useEffect(() => {
             axios
@@ -16,7 +21,7 @@ function ContextProvider ({children}) {
     
 
     return (
-        <Context.Provider value={{data}}>
+        <Context.Provider value={{data, theme, setTheme, themeToggler}}>
             {children}
         </Context.Provider>
     )

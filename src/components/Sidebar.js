@@ -54,7 +54,7 @@ function Sidebar() {
               text = "Lists"  
            />
            </NavLink>
-           <NavLink exact to= "/notyet" activeClassName="selected" style={{ textDecoration: 'none' }}>
+           <NavLink exact to= "/settings" activeClassName="selected" style={{ textDecoration: 'none' }}>
            <SidebarOption 
               Icon = {PermIdentityIcon}
               text = "Profile"  

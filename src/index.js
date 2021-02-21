@@ -6,12 +6,16 @@ import {BrowserRouter as Router} from "react-router-dom"
 import {ContextProvider} from './ContextProvider.js'
 
 
+
 ReactDOM.render(
+  
+  
   <ContextProvider>
   <Router>
     <App />
   </Router>
-  </ContextProvider>,
+  </ContextProvider>
+,
   document.getElementById('root')
 );
 
