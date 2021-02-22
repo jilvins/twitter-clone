@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect } from 'react'
 import TweetBox from '../subComponents/TweetBox.js'
 import Post from '../subComponents/Post.js'
 import '../styles/Feed.css'
 import db from '../firebase.js'
 import FlipMove from 'react-flip-move'
 
+
 function Feed () {
     const [posts, setPosts] = useState([])
+  
 
     useEffect(() => {
         db.collection('posts').orderBy("timestamp", "desc")

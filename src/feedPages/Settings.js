@@ -9,8 +9,12 @@ function Settings () {
 
     return (
         <div className="settings">
-        <p>This is setting page</p>
+        <div className="header">
+        <h2>This is setting page</h2>
+        </div>
+        <div className="btn-container">
         <button onClick={() => themeToggler()}>Change Theme</button>
+        </div>
         </div>
     )
 }

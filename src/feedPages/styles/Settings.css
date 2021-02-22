@@ -13,3 +13,25 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.header{
+    padding-bottom: 0;
+    padding-left: 0;
+    
+}
+.header h2{
+    margin-left: 20px;
+}
+
+.btn-container > button {
+    
+        background-color: var(--twitter-color);
+        border: none;
+        color: white;
+        font-weight: 900;
+        border-radius: 30px;
+        margin: 20px;
+        padding: 10px;
+        
+    
+}

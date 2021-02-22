@@ -8,8 +8,7 @@ function ContextProvider ({children}) {
     const [theme, setTheme] = useState("dark")
 
     const themeToggler = () => {
-    theme === "dark" ? setTheme("light") : setTheme("dark") 
-    console.log(theme)}
+    theme === "dark" ? setTheme("light") : setTheme("dark")}
         
           useEffect(() => {
             axios
@@ -17,7 +16,6 @@ function ContextProvider ({children}) {
               .then((response) => setData(response.data))
               .catch((error) => console.log(error));
           }, []);
-          console.log(data)
     
 
     return (
