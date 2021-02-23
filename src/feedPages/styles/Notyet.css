@@ -13,3 +13,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.header{
+    border-bottom: solid 1px var(--twitter-background);
+}

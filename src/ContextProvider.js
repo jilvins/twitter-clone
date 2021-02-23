@@ -5,7 +5,7 @@ const Context = React.createContext()
 
 function ContextProvider ({children}) {
     const [data, setData] = useState()
-    const [theme, setTheme] = useState("dark")
+    const [theme, setTheme] = useState("light")
 
     const themeToggler = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark")}

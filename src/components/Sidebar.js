@@ -9,11 +9,35 @@ import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone'
 import MailOutlineIcon from '@material-ui/icons/MailOutlineOutlined'
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder'
 import ListAltIcon from '@material-ui/icons/ListAlt'
-import PermIdentityIcon from '@material-ui/icons/PermIdentity'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
+import SettingsIcon from '@material-ui/icons/Settings';
 import { Button } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
+import Popper from '@material-ui/core/Popper';
+
+const useStyles = makeStyles((theme) => ({
+   paper: {
+     border: '1px solid',
+     padding: theme.spacing(1),
+     backgroundColor: theme.palette.background.paper,
+     color: '#000000',
+   },
+ }));
+
+
 
 function Sidebar() {
+   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
+
+
     return (
       <div className="sidebar">
        
@@ -42,6 +66,12 @@ function Sidebar() {
               text = "Message"  
            />
            </NavLink>
+           <NavLink exact to= "/settings" activeClassName="selected" style={{ textDecoration: 'none' }}>
+           <SidebarOption 
+              Icon = {SettingsIcon}
+              text = "Settings"  
+           />
+            </NavLink>
            <NavLink exact to= "/notyet" activeClassName="selected" style={{ textDecoration: 'none' }}>
            <SidebarOption 
               Icon = {BookmarkBorderIcon}
@@ -54,20 +84,23 @@ function Sidebar() {
               text = "Lists"  
            />
            </NavLink>
-           <NavLink exact to= "/settings" activeClassName="selected" style={{ textDecoration: 'none' }}>
-           <SidebarOption 
-              Icon = {PermIdentityIcon}
-              text = "Profile"  
-           />
-           </NavLink>
            <NavLink exact to= "/notyet" activeClassName="selected" style={{ textDecoration: 'none' }}>
            <SidebarOption 
               Icon = {MoreHorizIcon}
               text = "More"  
            />
            </NavLink>
+
+
+  
            <Button className="sidebar-btn"
-           variant="outlined">Tweet</Button>
+           variant="outlined"
+           aria-describedby={id}
+           onClick={handleClick}>Tweet</Button>
+
+      <Popper id={id} open={open} anchorEl={anchorEl}>
+        <div className={classes.paper}>Choose Tweet option at the top of the page</div>
+      </Popper>
        
 
       </div>

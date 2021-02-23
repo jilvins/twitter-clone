@@ -4,7 +4,7 @@
 .widget-input{
     display: flex;
     align-items: center;
-    background-color: var(--twitter-background);
+    background-color: rgba(218, 223, 225, 0.4);
     padding: 10px;
     border-radius: 20px;
     margin-top: 10px;
@@ -12,17 +12,17 @@
 }
 .widget-input > input {
     border: none;
-    background-color: var(--twitter-background);
+    background-color: inherit;
+    padding-left: 5px;
+    border-radius: 20px;
     outline: none;
 }
-.widget-search-icon{
-    color: gray;
-}
+
 .widget-container{
     margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
-    background-color: var(--twitter-background);
+    background-color: rgba(218, 223, 225, 0.4);
     border-radius: 20px;
 }
 
